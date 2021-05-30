@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Facilitar</title>
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/fontawesome.css">
+
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="../assets/css/jqvmap.min.css">
+  <link rel="stylesheet" href="../assets/css/summernote-bs4.css">
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../assets/css/selectric.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="../assets/css/datatables.min.css">
+  <link rel="stylesheet" href="../assets/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../assets/css/select.bootstrap4.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+
+  <!-- Mapa CSS -->
+  <link rel="stylesheet" href="../assets/css/leaflet.css">
+</head>
+
+<body class="sidebar-mini">
+  <div id="app">
+    <div class="main-wrapper">
+      <div class="navbar-bg"></div>
+      
+      <!--BARRA SUPERIOR INICIO -->
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li class="d-block d-md-none d-xl-none"><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <!-- BUSQUEDA INICIO -->
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-backdrop"></div>
+            <div class="search-result">
+              <div class="search-header">
+                Anteriores
+              </div>
+              <div class="search-item">
+                <a href="#">Incidencia 8272</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-item">
+                <a href="#">Acevedo</a>
+                <a href="#" class="search-close"><i class="fas fa-times"></i></a>
+              </div>
+              <div class="search-header">
+                Resultado
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <div class="search-icon bg-danger text-white mr-3">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  Incidencias
+                </a>
+              </div>
+              <div class="search-item">
+                <a href="#">
+                  <div class="search-icon bg-primary text-white mr-3">
+                    <i class="fas fa-laptop"></i>
+                  </div>
+                  Vecinos
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- BUSQUEDA FIN -->
+        </form>
+        <!--BARRA SUP DERECHA INICIO -->
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Mensajes
+                <div class="float-right">
+                  <a href="#">Marcar todos como leídos</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle">
+                    <div class="is-online"></div>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Jorge</b>
+                    <p>Hola no veo un pago en las expensas</p>
+                    <div class="time">10 horas</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="../assets/img/avatar/avatar-2.png" class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Martina</b>
+                    <p>Por favor verifica el pago al electricista</p>
+                    <div class="time">12 horas</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Notificaciones
+                <div class="float-right">
+                  <a href="#">Marcar todas como leidas</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-icon bg-primary text-white">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Alerta nueva incidencia ID 8172
+                    <div class="time text-primary">2 minutos</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-success text-white">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Angeles</b> reservo el SUM. <b>Sabado 3 de Mayo</b>
+                    <div class="time">12 horas</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Ver todos <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Nicolas</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logeado hace 5 min</div>
+              <a href="perfil.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Perfil
+              </a>
+              <a href="configuracion.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Configuración
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="index.html" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Salir
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!--BARRA SUP DERECHA FIN -->
+      </nav>
+      <!--BARRA SUPERIOR FIN -->
+      <!--BARRA LATERAL INICIO -->
+      <div class="main-sidebar">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="main.html"><img src="../assets/img/facilitar/logo_facilitar_sin_fondo.png" style="height: 30px;"></a>
+            <div style="font-size: 12px;margin-top: -40px;">FACILITAR</div>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="main.html"><img src="../assets/img/facilitar/logo_facilitar_sin_fondo.png" style="height: 30px;"></a>
+            <div style="font-size: 12px;margin-top: -40px;">FACILITAR</div>
+          </div>
+          <ul class="sidebar-menu">
+              <!-- <li class="menu-header">Principal</li> -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-fire"></i><span>Principal</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="main.html">Principal</a></li>
+                </ul>
+              </li>
+
+
+              <!-- <li class="menu-header">Usuarios</li> -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-users"></i> <span>Usuarios</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="usuarios.html">Usuarios</a></li>
+                  <li><a href="usuarios_alta.html">Alta</a></li>
+                </ul>
+              </li>
+
+              <!-- <li class="menu-header">Contenedores</li> -->
+              <li class="nav-item dropdown active">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-money-check-edit-alt"></i> <span>Expensas</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="expensas.html">Listar</a></li>
+                </ul>
+              </li>
+
+              <!-- <li class="menu-header">Contenedores</li> -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-user-headset"></i> <span>Incidencias</span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="incidencias.html">Incidencias</a></li>
+                </ul>
+              </li>
+            </ul>
+        </aside>
+      </div>
+      <!--BARRA LATERAL FIN -->
+
+      <!--CONTENIDO INICIO -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Expensas</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item active"><a href="#">General</a></div>
+              <div class="breadcrumb-item">Expensas</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <div class="invoice">
+              <div class="invoice-print">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="invoice-title">
+                      <h2>Expensas</h2>
+                      <div class="invoice-number">Código #12345</div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <address>
+                          <strong>Propietario:</strong><br>
+                            Hernan Casciari<br>
+                            1234 Siempreviva<br>
+                            Piso 3 Depto B<br>
+                            CABA
+                        </address>
+                      </div>
+                      <div class="col-md-6 text-md-right">
+                        <address>
+                          <strong>Período:</strong><br>
+                          Mayo 2021<br>
+                          Vencimiento<br>
+                          10-06-2021
+                        </address>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-md-12">
+                    <div class="section-title">Resumen</div>
+                    <p class="section-lead">Período facturado 01-05-2021 a 31-05-2021.</p>
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover table-md">
+                        <tr>
+                          <th data-width="40">#</th>
+                          <th>Item</th>
+                          <th class="text-center">Precio</th>
+                          <th class="text-center">Cantidad</th>
+                          <th class="text-right">Total</th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Encargado</td>
+                          <td class="text-center">$2.380,00</td>
+                          <td class="text-center">21</td>
+                          <td class="text-right">$49.980,00</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Agua</td>
+                          <td class="text-center">$8000,00</td>
+                          <td class="text-center">1</td>
+                          <td class="text-right">$8000,00</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Service</td>
+                          <td class="text-center">$600,00</td>
+                          <td class="text-center">1</td>
+                          <td class="text-right">$600,00</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-lg-8">
+                        <div class="section-title">Metodos de Pago</div>
+                        <p class="section-lead">Por favor recuerde que el pago impacta a las 24hs de haberlo realizado.</p>
+                        <div class="d-flex">
+                          <div class="mr-2 bg-visa" data-width="61" data-height="38"></div>
+                          <div class="mr-2 bg-jcb" data-width="61" data-height="38"></div>
+                          <div class="mr-2 bg-mastercard" data-width="61" data-height="38"></div>
+                          <div class="bg-paypal" data-width="61" data-height="38"></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 text-right">
+                        <div class="invoice-detail-item">
+                          <div class="invoice-detail-name">Subtotal</div>
+                          <div class="invoice-detail-value">$58.580,00</div>
+                        </div>
+                        <div class="invoice-detail-item">
+                          <div class="invoice-detail-name">Acumulado</div>
+                          <div class="invoice-detail-value">$15</div>
+                        </div>
+                        <hr class="mt-2 mb-2">
+                        <div class="invoice-detail-item">
+                          <div class="invoice-detail-name">Total</div>
+                          <div class="invoice-detail-value invoice-detail-value-lg">$58.580,00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="text-md-right">
+                <div class="float-lg-left mb-lg-0 mb-3">
+                  <button class="btn btn-primary btn-icon icon-left"><i class="fas fa-credit-card"></i> Procesar Pago</button>
+                  <button class="btn btn-danger btn-icon icon-left"><i class="fas fa-times"></i> Cancelar</button>
+                </div>
+                <button class="btn btn-warning btn-icon icon-left"><i class="fas fa-print"></i> Imprimir</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--CONTENIDO FIN -->
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2021 <div class="bullet"></div> Design <a href="#">TALLENO</a>
+        </div>
+        <div class="footer-right">
+          1.0.0
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.nicescroll.min.js"></script>
+  <script src="../assets/js/moment.min.js"></script>
+  <script src="../assets/js/stisla.js"></script>
+
+  <!-- JS Libraies -->
+  <script src="../assets/js/jquery.sparkline.min.js"></script>
+  <script src="../assets/js/Chart.min.js"></script>
+  <script src="../assets/js/owl.carousel.min.js"></script>
+  <script src="../assets/js/summernote-bs4.js"></script>
+  <script src="../assets/js/jquery.chocolat.min.js"></script>
+  <script src="../assets/js/jquery.selectric.min.js"></script>
+
+   <!-- JS Libraies -->
+  <script src="../assets/js/datatables.min.js"></script>
+  <script src="../assets/js/dataTables.bootstrap4.min.js"></script>
+  <script src="../assets/js/dataTables.select.min.js"></script>
+
+  <!-- Template JS File -->
+  <script src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="../assets/js/leaflet.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script>
+    $("#table-1").dataTable({
+      "pageLength": 5,
+      "columnDefs": [
+        { "sortable": false, "targets": [2,3] }
+      ]
+    });
+  </script>
+</body>
+</html>
